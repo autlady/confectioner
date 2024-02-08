@@ -1,0 +1,110 @@
+.product-card {
+    padding: 211px 15px 15px 15px;
+    max-width: 457px;
+    width: 100%;
+    position: relative;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 19px;
+}
+
+.product-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -1;
+    margin: -1px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom, #00B09B, #96C93D);
+}
+
+.product-card__img {
+    width: 357px;
+    height: 376px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.product-card__label {
+    position: absolute;
+    top: 118px;
+    right: 0;
+
+    display: inline-block;
+    height: 40px;
+    padding: 0 16px;
+    width: 132px;
+    color: #FFF;
+    // background-color: #D31119;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.64px;
+    text-transform: uppercase;
+}
+
+.product-card__label.label-sale {
+    background-color: #D31119;
+}
+
+.product-card__label.label-new {
+    background-color: #26B784; 
+}
+
+.product-card__label.label-hit {
+    background-color: #2660B7; 
+}
+
+.product-card__info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 51px;
+    margin-bottom: 33px;
+}
+
+.product-card__info-col {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: flex-end; 
+}
+
+.product-card__price {
+    color: var(--accent-green);
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: normal;
+
+    span {
+        font-size: 14px;
+    }
+}
+
+.product-card__text p {
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: left;
+}
+
+.product-card__btns {
+    display: flex;
+    gap: 21px;
+    justify-content: center;
+    position: absolute;
+    bottom: -24px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}

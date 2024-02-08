@@ -37,3 +37,21 @@
     top: 62px;
     right: 0;
 }
+
+.header-content__img img {
+    animation-name: swingElement;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes swingElement{
+    0%{
+        transform: translateY(-3%);
+    }
+
+    100%{
+        transform: translateY(3%);
+    }
+}

@@ -3,14 +3,30 @@
     padding-bottom: 245px;
 }
 
+.about .container {
+    position: relative;
+}
+
+.about__img {
+    position: absolute;
+    top: -100px;
+    left: -277px;
+    z-index: -1;
+}
+
+.about__img img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
 .about__title {
-    text-align: center;
     margin-bottom: 94px;
 }
 
 .about__content {
     display: flex;
     align-items: center;
+    gap: 34px;
 }
 
 .about__text p {
@@ -19,4 +35,21 @@
     font-style: italic;
     font-weight: 300;
     line-height: normal;
+}
+
+.about__text p+p {
+    margin-top: 1em;
+}
+
+.about__portrait {
+    width: 343px;
+    flex-shrink: 0;
+}
+
+.about__portrait img {
+    width: 343px;
+    height: 515px;
+    border-radius: 80px;
+    border: 3px solid #00B09B;
+    object-fit: cover;
 }

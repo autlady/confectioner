@@ -1,0 +1,22 @@
+section.products#products
+    .container.containerXL 
+        .products__title 
+            h2.h2(data-title = "Продукция") Продукция
+        .swiper#products-slider
+            .swiper-wrapper
+                .swiper-slide
+                    +product("01", "Орео", "800", "Клубника, шоколад, сахар, мука, яйца, сливки, сливочный сыр.", "Акция", "label-sale")  
+                .swiper-slide 
+                    +product("02", "Клубничка", "1000", "Клубника, шоколад, сахар, мука, яйца, сливки, сливочный сыр.", "Новинка", "label-new")
+                .swiper-slide
+                    +product("03", "Розовое облачко", "850", "Клубника, шоколад, сахар, мука, яйца, сливки, сливочный сыр.", "Хит продаж", "label-hit") 
+                .swiper-slide 
+                    +product("01", "Орео", "800", "Клубника, шоколад, сахар, мука, яйца, сливки, сливочный сыр.") 
+                .swiper-slide
+                    +product("02", "Клубничка", "1000", "Клубника, шоколад, сахар, мука, яйца, сливки, сливочный сыр.")
+            .products-slider-controls
+                button.products-slider-prev#btn-prev
+                    img(src="./img/icons/arrow-left.svg", alt="Back")
+                .swiper-pagination#products-slider-pagination
+                button.products-slider-next#btn-next
+                    img(src="./img/icons/arrow-right.svg", alt="Next")

@@ -1,0 +1,22 @@
+section.contacts#contacts
+    .container 
+        .contacts__title 
+            h2.h2(data-title = "Контакты") Контакты
+        .contacts-content 
+            .contacts-list
+                ul 
+                    li
+                        .contacts-text Телефон
+                        .contacts-link
+                            a(href="tel:+79992555555") 8-999-255-55-55
+                    li 
+                        .contacts-text Соц. сети
+                        .contacts-social 
+                            +social([
+                                { link: "#!", className: "vk" },
+                                { link: "#!", className: "tg" },
+                                { link: "#!", className: "wa" },
+                            ])
+                button.btn-calc Задать вопрос
+            .contacts-map
+                iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad631064279eacf4bd2bd77875672a0752001bb2ea179a6c5184667b7c175a4c5&amp;source=constructor" frameborder="0")

@@ -1,0 +1,19 @@
+mixin product(img, title, price, text, label, labelCl)
+    .product-card 
+        .product-card__img 
+            img(src="./img/products/" + img + ".webp", alt= title)
+        if label 
+            .product-card__label(class=" "+ labelCl) #{label}
+        .product-card__info 
+            .product-card__info-col
+                .product-card__title 
+                    h3.h3 #{title}
+                .product-card__price #{price}
+                    span  руб / кг
+            .product-card__text
+                p #{text}
+        .product-card__btns
+            button.btn-gradient 
+                span Подробнее
+            button.btn-gradient 
+                span Заказать

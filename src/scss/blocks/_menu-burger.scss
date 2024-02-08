@@ -1,0 +1,55 @@
+.menu-toggle {
+//   z-index: 6;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  position: relative;
+  flex-shrink: 0;
+  background-color: yellow;
+}
+
+.menu-toggle span {
+  position: relative;
+  height: 2px;
+  width: 20px;
+  border-radius: 5px;
+  background-color: black;
+  transition: 0.2s;
+}
+
+.menu-toggle span::after,
+.menu-toggle span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  height: 2px;
+  background-color: black;
+  border-radius: 5px;
+  right: 0;
+  transition: 0.2s;
+}
+
+.menu-toggle span::after {
+  top: -8px;
+}
+
+.menu-toggle span::before {
+  bottom: -8px;
+}
+
+.menu-toggle.active span {
+  background-color: transparent !important;
+}
+
+.menu-toggle.active span::after {
+  top: 0px;
+  transform: rotate(45deg);
+}
+
+.menu-toggle.active span::before {
+  bottom: 0px;
+  transform: rotate(-45deg);
+}

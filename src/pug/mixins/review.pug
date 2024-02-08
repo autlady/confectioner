@@ -1,0 +1,7 @@
+mixin review(img, name, text) 
+    .review-card 
+        .review-card__img
+            img(src="./img/reviews/" + img + ".webp", alt= name) 
+        .review-card__content 
+            h4.review-card__author #{name}
+            p.review-card__text #{text}
