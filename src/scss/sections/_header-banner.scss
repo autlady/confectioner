@@ -2,6 +2,16 @@
     padding-top: 177px;
     padding-bottom: 135px;
     background-image: var(--gradient);
+
+    @media (max-width: 991px) {
+        padding-top: 50px;
+        padding-bottom: 60px;
+    }
+
+    @media (max-width: 767px) {
+        padding-top: 36px;
+        padding-bottom: 41px;
+    }
 }
 
 .header-banner-wrapper {
@@ -23,19 +33,32 @@
     p {
         font-size: 16px;
         line-height: 1.7;
+
+        @media (max-width: 490px) {
+            font-size: 14px;
+        }
     }
 }
 
 .header-banner__btns {
     margin-top: 57px;
     display: flex;
-    gap: 30px;
+    column-gap: 30px;
+
+    @media (max-width: 572px) {
+        flex-direction: column;
+        row-gap: 16px;
+    }
 }
 
 .header-banner__img {
     position: absolute;
     top: 62px;
     right: 0;
+
+    @media (max-width: 1199px) {
+        display: none;
+      }
 }
 
 .header-banner__img img {

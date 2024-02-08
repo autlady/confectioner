@@ -160,6 +160,11 @@ select:-webkit-autofill:focus {
   font-size: 36px;
   font-weight: 700;
   line-height: normal;
+
+  @media (max-width: 767px) {
+    font-size: 24px;
+    line-height: 29px;
+  }
 }
 
 .h2 {

@@ -1,0 +1,34 @@
+.aside-menu-wrapper {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: flex-end;
+    transform: translateX(130%);
+    transition: .3s;
+    opacity: 0;
+}
+
+.aside-menu-wrapper.active {
+    z-index: 10;
+    transform: translateX(0%);
+    opacity: 1;
+}
+
+.aside-menu {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    max-width: 440px;
+    padding: 30px 30px 30px 38px;
+    overflow: hidden;
+
+    @media (min-width: 1900px) {
+        max-width: 600px;
+        width: 100%;
+    }
+}

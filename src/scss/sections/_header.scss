@@ -1,5 +1,9 @@
 .header {
     padding: 40px 0 36px;
+
+    @media (max-width: 991px) {
+        padding: 20px 0 27px;
+    }
 }
 
 .header-content {
@@ -10,12 +14,25 @@
 
 .header__logo {
     flex-shrink: 0;
+    width: 64px;
+
+    @media (max-width: 991px) {
+        width: 50px;
+    }
+
+    @media (max-width: 490px) {
+        width: 30px;
+    }
 }
 
 .header__nav {
     flex-grow: 1;
     padding-left: 40px;
     padding-right: 40px;
+
+    @media (max-width: 991px) {
+        display: none;
+    }
 }
 
 .nav-menu {
@@ -41,6 +58,11 @@
     display: flex;
     align-items: center;
     gap: 62.5px;
+
+    @media (max-width: 490px) {
+        flex-direction: row-reverse;
+        gap: 29px;
+    }
 }
 
 .header__phone {
