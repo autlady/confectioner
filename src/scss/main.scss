@@ -5,7 +5,7 @@
 //blocks
 
 @import "./blocks/social";
-@import "./blocks/menu-burger";
+@import "./blocks/menu-toggle";
 @import "./blocks/btn-calc";
 @import "./blocks/btn-more";
 @import "./blocks/btn-gradient";
@@ -16,8 +16,8 @@
 
 //sections
 
- @import "./sections/header-top";
- @import "./sections/header-content";
+ @import "./sections/header";
+ @import "./sections/header-banner";
  @import "./sections/about";
  @import "./sections/benefits";
  @import "./sections/products";

@@ -1,24 +1,28 @@
-.header-top {
+.header {
     padding: 40px 0 36px;
 }
 
-.nav {
+.header-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.nav__logo {
+.header__logo {
     flex-shrink: 0;
 }
 
-.nav__menu {
-    display: flex;
-    gap: 25px;
+.header__nav {
     flex-grow: 1;
-    margin-left: 40px;
-    margin-right: 10px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
 
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+   
     a {
         font-family: "Inter", sans-serif;
         font-size: 14px;
@@ -33,13 +37,14 @@
 }
 
 
-.nav__social {
-    flex-shrink: 0;
+.header__social {
+    display: flex;
+    align-items: center;
+    gap: 62.5px;
 }
 
-.nav__tel {
+.header__phone {
     flex-shrink: 0;
-    margin-left: 42px;
 
     a {
         font-size: 14px;

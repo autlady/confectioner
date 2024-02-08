@@ -1,0 +1,33 @@
+header.header
+   .container 
+      .header-content
+         .header__logo
+            a(href="#!")
+                img(src="./img/logo.webp", alt="logo")
+         .header__nav
+            ul.nav-menu 
+               li
+                  a(href="#about") О кондитере
+               li
+                  a(href="#benefits") Преимущества
+               li 
+                  a(href="#products") Продукция
+               li 
+                  a(href="#reviews") Отзывы
+               li 
+                  a(href="#contacts") Контакты
+            
+         .header__social
+            +social([
+               { link: "#!", className: "vk" },
+               { link: "#!", className: "tg" },
+               { link: "#!", className: "wa" },
+            ])
+
+            .header__phone
+               a(href="tel:+79008885533") 8-900-888-55-33
+
+         <!-- burger -->
+         include ../blocks/menu-toggle.pug
+				
+   
