@@ -32,3 +32,8 @@
         width: 100%;
     }
 }
+
+.aside-menu .nav-menu {
+    display: flex;
+    flex-direction: column;
+}
