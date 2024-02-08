@@ -20,12 +20,10 @@
 }
 
 .aside-menu {
-    display: flex;
-    flex-direction: column;
+    padding: 40px;
+    padding-top: 60px;
+    max-width: 375px;
     background-color: #fff;
-    max-width: 440px;
-    padding: 30px 30px 30px 38px;
-    overflow: hidden;
 
     @media (min-width: 1900px) {
         max-width: 600px;
@@ -36,4 +34,6 @@
 .aside-menu .nav-menu {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    row-gap: 15px;
 }
