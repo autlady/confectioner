@@ -55,6 +55,7 @@
     position: absolute;
     top: 62px;
     right: 0;
+    pointer-events: none;
 
     @media (max-width: 1199px) {
         display: none;
