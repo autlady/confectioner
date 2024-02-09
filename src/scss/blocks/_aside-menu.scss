@@ -21,9 +21,9 @@
 
 .aside-menu {
     padding: 40px;
-    padding-top: 60px;
+    padding-top: 80px;
     max-width: 375px;
-    background-color: #fff;
+    background: linear-gradient(180deg, #00B09B 0%, #96C93D 100%);
 
     @media (min-width: 1900px) {
         max-width: 600px;
