@@ -12,6 +12,10 @@
     top: -100px;
     left: -277px;
     z-index: -1;
+
+    @media (max-width: 1199px) {
+        display: none;
+    }
 }
 
 .about__img img {
@@ -27,6 +31,11 @@
     display: flex;
     align-items: center;
     gap: 34px;
+
+    @media (max-width: 767px) {
+        flex-direction: column-reverse;
+
+    }
 }
 
 .about__text p {

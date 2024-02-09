@@ -192,6 +192,10 @@ select:-webkit-autofill:focus {
   font-size: 82px;
   color: rgba(0, 0, 0, 0.05);
   z-index: -1;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
 }
 
 .h3 {
