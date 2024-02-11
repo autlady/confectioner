@@ -58,9 +58,6 @@ html {
   scroll-behavior: smooth;
 }
 
-// font-family: 'Inter', sans-serif;
-// font-family: 'Montserrat', sans-serif;
-
 html,
 body {
   margin: 0;
@@ -212,5 +209,10 @@ select:-webkit-autofill:focus {
   font-weight: 700;
   line-height: normal;
   text-align: end;
+
+  @media (max-width: 797px) {
+    font-size: 18px;
+    line-height: 22px;
+}
 }
 

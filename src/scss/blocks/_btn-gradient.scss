@@ -18,6 +18,11 @@
     
     background: #fff;
     z-index: 2;
+
+    @media (max-width: 797px) {
+        min-width: 130px;
+        font-size: 16px;
+    }
 }
 
 .btn-gradient span {
