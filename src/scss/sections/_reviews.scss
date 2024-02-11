@@ -9,11 +9,11 @@
     z-index: -2;
 
     @media (max-width: 1199px) {
-        padding-top: 50px;
+        padding-top: 100px;
         padding-bottom: 50px;
     }
 
-    @media (max-width: 1023px) {
+    @media (max-width: 767px) {
         background-image: none;
         padding-top: 30px;
         padding-bottom: 30px;
