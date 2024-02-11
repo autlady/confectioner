@@ -80,9 +80,6 @@
 }
 
 .product-card__info {
-    // display: grid;
-    // grid-template-columns: 1fr 1fr;
-    // grid-column-gap: 51px;
     margin-bottom: 33px;
 
     display: flex;
@@ -95,6 +92,7 @@
     flex-direction: column;
     gap: 12px;
     align-items: flex-end; 
+    max-height: 81px;
 }
 
 .product-card__price {
@@ -111,6 +109,12 @@
 
 .product-card__text {
     width: 50%;
+    min-height: 81px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+
+    overflow: hidden;
 }
 
 .product-card__text p {
