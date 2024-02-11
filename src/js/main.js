@@ -1,17 +1,3 @@
-// const toggleMenu = document.querySelector('menu-toggle');
-
-// if (toggleMenu){
-//     toggleMenu.addEventListener('click', function(){
-        
-//         if(this.classList.contains('active')){
-//             this.classList.remove('active');
-//         }else{
-//             this.classList.add('active');
-//         }
-//     })
-// }
-
-
 
 const swiper = new Swiper('#products-slider', {
 
@@ -26,6 +12,24 @@ const swiper = new Swiper('#products-slider', {
   navigation: {
     nextEl: '#btn-next',
     prevEl: '#btn-prev',
+  },
+
+  breakpoints: {
+    320: {
+      slidesPerView: 1,
+    },
+    510: {
+      slidesPerView: 1.5,
+    },
+    690: {
+      slidesPerView: 2,
+    },
+    900: {
+      slidesPerView: 2.5,
+    },
+    1200: {
+      slidesPerView: 3,
+    },
   },
 });
 

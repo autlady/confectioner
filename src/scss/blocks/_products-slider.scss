@@ -1,5 +1,9 @@
 .swiper {
     padding: 200px 15px 150px;
+
+    @media (max-width: 1023px) {
+        padding-top: 140px;
+    }
 }
 
 .swiper-wrapper {
