@@ -11,6 +11,10 @@
     display: flex;
     column-gap: 100px;
     justify-content: space-between;
+
+    @media (max-width: 991px) {
+        column-gap: 30px;
+    }
 }
 
 .contacts-list {
@@ -50,11 +54,17 @@
 }
 
 .contacts-map {
-    width: 623px;
+    width: 625px;
     height: 310px;
+    flex-shrink: 0;
 
     iframe {
         width: 100%;
         height: 100%;
+    }
+
+    @media (max-width: 1439px) {
+        width: 50%;
+        max-width: 625px;
     }
 }
