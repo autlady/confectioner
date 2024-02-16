@@ -10,10 +10,11 @@
                         .product-info__name Клубничка
                         .product-info__text Клубника, шоколад, сахар, мука, яйца, сливки, сливочный сыр.
                     .items-counter-wrapper
-                        .items__control(data-action="minus") -
+                        button.items__control(data-action="minus") -
                         .items__current(data-counter) 1
-                        .items__control(data-action="plus") +
-                        .items__measure кг
+                        button.items__control(data-action="plus") +
+                        input(type="hidden", name="count", class="form-control" value="1")
+                        .product-info__text кг
                     .product-info-price 
                         .product-info__text Cтоимость
                         .product-info__price 800 руб
