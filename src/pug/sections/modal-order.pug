@@ -26,12 +26,15 @@
                         input(class="form-input" type="text" name="tel" placeholder="Ваш телефон")
                     .form-item
                         input(class="form-input" type="text" name="order" placeholder="Адрес доставки и комментарий к заказу")
-
-                    p.service-form-privacy 
-                        | Нажимая на кнопку "Оформить заказ", Вы даёте согласие на
-                        a(href="#!")  обработку своих персональных данных
-                        |  и соглашаетесь 
-                        a(href="#!")  с политикой конфиденциальности
+                    
+                    .form-item.checkbox
+                        input(type="checkbox" name="agree").real-checkbox
+                        span.custom-checkbox 
+                        span.checkbox-text
+                            | Нажимая на кнопку "Оформить заказ", Вы даёте согласие на
+                            a(href="#!")  обработку своих персональных данных
+                            |  и соглашаетесь 
+                            a(href="#!")  с политикой конфиденциальности
                     .form-item
                         button(type="submit" frame-close class="btn-gradient") Оформить заказ
         

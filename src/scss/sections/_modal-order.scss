@@ -155,17 +155,93 @@
 }
 
 .form-input:focus {
-    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5); 
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
 
 }
 
-.service-form-privacy {
+/*========CHECKBOX======*/
+
+.custom-checkbox {
+    color: #353F4B;
+    font-size: 20px;
+    line-height: 1.43;
+    letter-spacing: -0.2px;
+}
+
+.real-checkbox {
+    width: 0;
+    height: 0;
+    opacity: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.real-checkbox:focus+.custom-checkbox {
+    background-color: #eee;
+}
+
+.custom-checkbox {
+    position: relative;
+    display: inline-block;
+    flex-shrink: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #fff;
+    border-radius: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.20);
+    margin-right: 5px;
+}
+
+.custom-checkbox::before {
+    content: '';
+    display: inline-block;
+    width: 15px;
+    height: 11px;
+    background-image: url("./../img/icons/check.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    margin-top: 1px;
+
+    transition: 0.2s ease-in;
+}
+
+.custom-checkbox::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -4;
+    margin: -1px;
+    border-radius: 2px;
+    background: linear-gradient(to bottom, #00B09B, #96C93D);
+}
+
+// активация декоративного чекбокса
+.real-checkbox:checked +.custom-checkbox::before {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    column-gap: 6px;
+}
+
+.checkbox-text {
     font-size: 10px;
     line-height: 1;
     color: rgba(0, 0, 0, 0.3);
 }
 
-.service-form-privacy a {
+.checkbox-text a {
     font-size: 10px;
     line-height: 1;
     color: rgba(0, 0, 0, 0.3);
