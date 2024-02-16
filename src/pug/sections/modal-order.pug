@@ -1,0 +1,21 @@
+.modal-frame-wrapper(frame-modal="order-form")
+    .modal-frame
+        .modal-frame-body 
+            h2.modal-frame-title Оформление заказа 
+            form.order-form(action="")
+                .product-info
+                    .product-info__img 
+                        img(src="./img/products/01.webp", alt="product img")
+                    .product-info-desc 
+                        .product-info__name Клубничка
+                        .product-info__text Клубника, шоколад, сахар, мука, яйца, сливки, сливочный сыр.
+                    .items-counter-wrapper
+                        .items__control(data-action="minus") -
+                        .items__current(data-counter) 1
+                        .items__control(data-action="plus") +
+                        .items__measure кг
+                    .product-info-price 
+                        .product-info__text Cтоимость
+                        .product-info__price 800 руб
+                .person-info
+            

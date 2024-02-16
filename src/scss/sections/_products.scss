@@ -1,6 +1,7 @@
 .products {
     padding-top: 50px;
     position: relative;
+    overflow: hidden;
 
     @media (max-width: 797px) {
         padding-top: 30px;

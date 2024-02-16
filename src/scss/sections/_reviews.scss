@@ -7,6 +7,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     z-index: -2;
+    overflow: hidden;
 
     @media (max-width: 1199px) {
         padding-top: 100px;
@@ -17,6 +18,8 @@
         background-image: none;
         padding-top: 30px;
         padding-bottom: 30px;
+        position: relative;
+        z-index: 0;
     }
 }
 
@@ -36,7 +39,7 @@
 .scroll-wrapper {
     @media (max-width: 767px) {
         width: calc(50% + 50vw);
-        overflow: hidden;
+        
         overflow-x: auto;
     }
 }
