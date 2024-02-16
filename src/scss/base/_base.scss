@@ -75,6 +75,28 @@ body {
   height: 100vh;
 }
 
+.modal-frame-wrapper {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 7;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(27, 40, 106, 0.50);
+  }
+
+.modal-frame {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 864px;
+    background-color: #fff;
+    padding: 60px 70px;
+}
+
 
 a,
 a:hover {
@@ -218,6 +240,7 @@ select:-webkit-autofill:focus {
 
 .modal-frame-title {
   margin-bottom: 57px;
+  text-align: center;
   font-family: "Montserrat", sans-serif;
   font-size: 36px;
   line-height: 44px;
