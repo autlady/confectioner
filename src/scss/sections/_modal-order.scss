@@ -166,7 +166,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // align-items: center;
 
     @media (max-width: 420px) {
         width: 100%;
@@ -299,8 +298,6 @@
 .form-item .btn-gradient {
     padding: 0 22px;
     color: #fff;
-    // margin-left: auto;
-    // margin-right: auto;
 
     &:hover {
         color: #000;
