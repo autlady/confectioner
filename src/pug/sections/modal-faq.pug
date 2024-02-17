@@ -1,0 +1,27 @@
+.modal-frame-wrapper(frame-modal="faq-form")
+    .modal-frame.modal-frame--faq
+        .modal-frame-body 
+            h2.modal-frame-title Задать вопрос 
+            form.order-form(action="")
+                .person-info
+                    .form-item
+                        input(class="form-input" type="text" name="name" placeholder="Ваше имя")
+                    .form-item
+                        input(class="form-input" type="text" name="tel" placeholder="Ваш телефон")
+                    .form-item
+                        textarea(class="form-input form-input--textarea" type="text" name="message" placeholder="Ваш вопрос")
+                    .form-item
+                        label.checkbox
+                            input(type="checkbox" name="agree").real-checkbox
+                            span.custom-checkbox 
+                            span.checkbox-text
+                                | Нажимая на кнопку "Оформить заказ", Вы даёте согласие на
+                                a(href="#!")  обработку своих персональных данных
+                                |  и соглашаетесь 
+                                a(href="#!")  с политикой конфиденциальности
+                    .form-item.form-item-btn
+                        button(type="submit" frame-close class="btn-gradient") Отправить
+        
+
+
+            

@@ -39,10 +39,11 @@
 .scroll-wrapper {
     @media (max-width: 767px) {
         width: calc(50% + 50vw);
-        
         overflow-x: auto;
     }
 }
+
+.scroll-wrapper::-webkit-scrollbar { width: 0 !important }
 
 .reviews-content {
     display: grid;

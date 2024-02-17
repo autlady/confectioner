@@ -1,4 +1,4 @@
-section.contacts.none#contacts
+section.contacts#contacts
     .container 
         .contacts__title 
             h2.h2(data-title = "Контакты") Контакты
@@ -17,6 +17,6 @@ section.contacts.none#contacts
                                 { link: "#!", className: "tg" },
                                 { link: "#!", className: "wa" },
                             ])
-                button.btn-calc Задать вопрос
+                button.btn-calc(frame-btn="faq-form") Задать вопрос
             .contacts-map
                 iframe(src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad631064279eacf4bd2bd77875672a0752001bb2ea179a6c5184667b7c175a4c5&amp;source=constructor" frameborder="0")
