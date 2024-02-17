@@ -110,6 +110,11 @@ body {
     width: 864px;
     background-color: #fff;
     padding: 60px 70px;
+
+    @media (max-width: 767px) {
+      width: 100%;
+      padding: 30px 20px;
+    }
 }
 
 
@@ -156,6 +161,14 @@ button {
   border: none;
   box-shadow: none;
   cursor: pointer;
+}
+
+textarea {
+  resize: none;
+}
+
+textarea, textarea:focus {
+  outline: none;
 }
 
 input[type="submit"] {
