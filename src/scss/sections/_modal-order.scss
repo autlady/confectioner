@@ -1,3 +1,14 @@
+.order-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 420px) {
+        width: 100%;
+    }
+}
+
 .product-info {
     margin-bottom: 29px;
     display: flex;
@@ -8,6 +19,11 @@
     margin-right: 50px;
     width: 137px;
     flex-shrink: 0;
+
+    @media (max-width: 767px) {
+        width: 80px;
+        margin-right: 20px;
+    }
 }
 
 .product-info__img img {
@@ -22,6 +38,14 @@
     display: flex;
     flex-direction: column;
     row-gap: 21px;
+
+    @media (max-width: 868px) {
+        display: none;
+    }
+
+    @media (max-width: 420px) {
+        max-width: 100%;
+    }
 }
 
 .product-info__name {
@@ -40,6 +64,10 @@
     display: flex;
     align-items: center;
     gap: 10px;
+
+    @media (max-width: 767px) {
+        gap: 5px;
+    }
 }
 
 .product-info-price {
@@ -103,6 +131,10 @@
 
 .product-info-price {
     margin-left: 56px;
+
+    @media (max-width: 767px) {
+        margin-left: 20px;
+    }
 }
 
 .product-info__price {
@@ -111,6 +143,16 @@
     font-weight: 700;
     line-height: normal;
     color: var(--accent-green);
+
+    @media (max-width: 767px) {
+        font-size: 16px;
+    }
+}
+
+.product-info-price .product-info__text {
+    @media (max-width: 767px) {
+        display: none;
+    }
 }
 
 .person-info {
@@ -119,6 +161,14 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    @media (max-width: 420px) {
+        width: 100%;
+    }
+
+    // @media (max-width: 767px) {
+    //     width: 100%;
+    // }
 }
 
 .form-title {
@@ -161,12 +211,12 @@
 
 /*========CHECKBOX======*/
 
-.custom-checkbox {
-    color: #353F4B;
-    font-size: 20px;
-    line-height: 1.43;
-    letter-spacing: -0.2px;
-}
+// .custom-checkbox {
+//     color: #353F4B;
+//     font-size: 20px;
+//     line-height: 1.43;
+//     letter-spacing: -0.2px;
+// }
 
 .real-checkbox {
     width: 0;
@@ -176,9 +226,9 @@
     z-index: -1;
 }
 
-.real-checkbox:focus+.custom-checkbox {
-    background-color: #eee;
-}
+// .real-checkbox:focus+.custom-checkbox {
+//     background-color: #eee;
+// }
 
 .custom-checkbox {
     position: relative;
@@ -210,21 +260,21 @@
     transition: 0.2s ease-in;
 }
 
-.custom-checkbox::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: -4;
-    margin: -1px;
-    border-radius: 2px;
-    background: linear-gradient(to bottom, #00B09B, #96C93D);
-}
+// .custom-checkbox::after {
+//     content: "";
+//     position: absolute;
+//     top: 0;
+//     right: 0;
+//     bottom: 0;
+//     left: 0;
+//     z-index: -4;
+//     margin: -1px;
+//     border-radius: 2px;
+//     background: linear-gradient(to bottom, #00B09B, #96C93D);
+// }
 
 // активация декоративного чекбокса
-.real-checkbox:checked +.custom-checkbox::before {
+.real-checkbox:checked + .custom-checkbox::before {
     transform: translate(-50%, -50%) scale(1);
 }
 
@@ -246,4 +296,13 @@
     line-height: 1;
     color: rgba(0, 0, 0, 0.3);
     text-decoration: underline;
+}
+
+.form-item .btn-gradient {
+    padding: 0 22px;
+    color: #fff;
+
+    &:hover {
+        color: #000;
+    }
 }
